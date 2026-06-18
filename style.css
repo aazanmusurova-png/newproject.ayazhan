@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#faf6f0;
+    color:#5d4b42;
+    line-height:1.7;
+}
+
+/* ШАПКА */
+
+header{
+    background:linear-gradient(
+        rgba(255,248,240,0.4),
+        rgba(255,248,240,0.4)
+    ),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1600");
+    background-size:cover;
+    background-position:center;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-overlay{
+    background:rgba(255,255,255,0.8);
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    backdrop-filter:blur(5px);
+}
+
+header h1{
+    font-size:52px;
+    color:#7c5e57;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:22px;
+    color:#8d6e63;
+}
+
+/* ОБЩИЕ СЕКЦИИ */
+
+section{
+    padding:80px 10%;
+}
+
+.content{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.content img{
+    width:380px;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+.text{
+    flex:1;
+}
+
+.text h2{
+    font-size:36px;
+    margin-bottom:20px;
+    color:#a1766a;
+}
+
+.text p{
+    font-size:18px;
+}
+
+/* ПОЧЕМУ Я ЛЮБЛЮ ЧТЕНИЕ */
+
+.why-reading{
+    background:#fff9f4;
+}
+
+.why-reading ul{
+    margin-left:25px;
+}
+
+.why-reading li{
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+/* КНИГИ */
+
+.books{
+    text-align:center;
+}
+
+.books h2{
+    font-size:40px;
+    color:#a1766a;
+    margin-bottom:45px;
+}
+
+.book-cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:#ffffff;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding-top:20px;
+    color:#8d6e63;
+}
+
+.card p{
+    padding:15px 20px 25px;
+}
+
+/* ПОЛЬЗА ЧТЕНИЯ */
+
+.benefits{
+    background:#fff9f4;
+    text-align:center;
+}
+
+.benefits h2{
+    font-size:40px;
+    color:#a1766a;
+    margin-bottom:45px;
+}
+
+.benefit-boxes{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.benefit{
+    width:220px;
+    background:white;
+    padding:30px 20px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.benefit span{
+    font-size:50px;
+}
+
+.benefit p{
+    margin-top:15px;
+    font-size:17px;
+}
+
+/* ЗАКЛЮЧЕНИЕ */
+
+.conclusion{
+    background:#fdf7f2;
+}
+
+/* ПОДВАЛ */
+
+footer{
+    background:#d8c3b5;
+    color:#5d4b42;
+    text-align:center;
+    padding:35px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* АДАПТАЦИЯ */
+
+@media(max-width:900px){
+
+    .content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .content img{
+        width:100%;
+        max-width:400px;
+    }
+
+    header h1{
+        font-size:34px;
+    }
+
+    .books h2,
+    .benefits h2,
+    .text h2{
+        font-size:30px;
+    }
+}
